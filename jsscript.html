@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> my js program</title>
+    <link rel="stylesheet" href="style.css"><!--external css-->
+    <script src="script.js"></script><!--external javascript-->
+
+    <style>
+        /* internal css*/
+    </style>
+</head>
+<body>
+    <div id="my-div" style="/*inline css*/">Hello</div>
+    <button id="click-btn">Click Me!</button>
+
+    <script type="text/javascript">
+        //inline javascript
+        var a = "Arun";
+        var z; //declaration
+        if(z) {
+            console.log('1st time value இருக்கு')
+        }
+        z = 'Sam'; //Initialization / Assignment
+        if(z == 'Sam') {
+            console.log('2nd time value இருக்கு')
+        }
+        console.log(z);
+        z = 'Kohi'; //variable Assignment 
+        console.log(z);
+
+        var b = {
+            name: 'Arun',
+            age: 26,
+            address: 'Tenkasi',
+            office: 'Capestart'
+        }
+        var btn = document.getElementById('click-btn');
+
+        // console.log("print text " + a);
+        // console.log(b)
+    </script>
+    
+</body>
+</html>

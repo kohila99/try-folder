@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our HTML5 page</title>
+
+</head>
+<body>
+    <canvas id="mycanvas" width="600px" height="600px">
+    </canvas>
+    <script type="text/javascript" >
+        var canvas = document.getElementById("mycanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle ="#300494";
+        ctx.fillRect(0,0, 500, 500);
+        ctx.fillStyle = "#276534";
+        ctx.fillRect(0,0,40,40);
+        ctx.strokeRect(0,0,50,50);
+
+    </script>
+    
+</body>
+</html>

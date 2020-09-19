@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> my js program</title>
+</head>
+<body>
+    <div id="my-div">Hello</div>
+    <button id="click-btn">Click Me!</button>
+
+    <script type="text/javascript">
+        var obj1 = {
+            firstName: 'Arun',
+            lastName: 'Prabhu',
+            Initial: 'K',
+            age: 26,
+            address: '2/122 Joel Cottage',
+            street: 'Thoranamalai Road',
+            area: 'Asirvathapuram',
+            city: 'Tenkasi',
+            pincode: '627415',
+            office: 'Capestart', //property
+            fullName: function() { //method (function maathiri)
+                var fullNameVar = this.firstName + ' ' + this.lastName;
+                return fullNameVar;
+            }
+        }
+
+        var obj2 = {
+            firstName: 'Kohila',
+            lastName: 'Kohi',
+            age: 21,
+            address: '2/122 Joel Cottage',
+            street: 'Thoranamalai Road',
+            area: 'Asirvathapuram',
+            city: 'Tenkasi',
+            pincode: '627415',
+            office: 'Capestart',
+            fullName: function() {
+                var fullNameVar = this.firstName + ' ' + this.lastName;
+                return fullNameVar;
+            },
+            fullAddress: function() {
+                var addressVar = this.address + ', ' + this.street + ', ' + this.area + ', ' + this.city  + ' - ' + this.pincode;
+                return addressVar;
+            }
+        }
+        
+        console.log(  obj2.fullAddress() )
+        
+
+
+    </script>
+    
+</body>
+</html>
